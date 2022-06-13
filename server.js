@@ -1,17 +1,20 @@
-/*
+
+
 
 const http = require('http');
 
-const server = http.createServer((req, res) => {
-    res.end('Voilà la réponse du serveur !');
-});
 
-server.listen(process.env.PORT || 3001);
+console.log ("begin !!");
+app.set('port', process.env.PORT || 3001)
+
+
+
+console.log ("hello end  !!");
+
+
+/*
+
+const app = require ('./app');
 
 
 */
-
-
-console.log ("hello world  !!");
-
-
