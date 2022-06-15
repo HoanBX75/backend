@@ -30,7 +30,7 @@ app.use('/api/auth', userRoutes);
 
 module.exports = app;
 
-console.log("apps.js fin");
+console.log("apps.js fin2 ");
 
 
 
