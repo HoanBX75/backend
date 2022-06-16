@@ -2,8 +2,15 @@
 const express = require('express');
 const bodyParser = require ('body-parser');
 const mongoose = require('mongoose');
+
 const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
+
+const dotenv = require("dotenv");
+dotenv.config();
+const MY_PORT = process.env.PORT;
+const MY_APP_SECRET = process.env.APP_SECRET;
+console.log ("My ports ", MY_PORT);
 
 
 mongoose.connect('mongodb+srv://ochoan:ochoan@cluster0.kpc7n.mongodb.net/?retryWrites=true&w=majority',
@@ -31,6 +38,7 @@ app.use('/api/auth', userRoutes);
 module.exports = app;
 
 console.log("apps.js fin2 ");
+
 
 
 
